@@ -1,0 +1,34 @@
+# Core LangChain and LangGraph dependencies
+langgraph==0.2.16
+langchain==0.2.16
+langchain-core==0.2.38
+langchain-community==0.2.16
+langchain-text-splitters==0.2.2
+
+# Google AI integration
+google-generativeai==0.7.2
+langchain-google-genai==1.0.10
+
+# UI frameworks
+gradio==4.44.0
+streamlit==1.39.0
+
+# Document processing
+PyPDF2==3.0.1
+python-docx==1.1.2
+pdfplumber==0.11.4
+pytesseract==0.3.13
+Pillow==10.4.0
+
+# Data processing
+pandas==2.2.3
+numpy==1.26.4
+
+# Core utilities
+python-dotenv==1.0.1
+pydantic==2.9.2
+typing-extensions==4.12.2
+
+# Additional dependencies for stability
+requests==2.32.3
+aiohttp==3.10.10

@@ -1,0 +1,13 @@
+[
+  {
+    "recipient_name": "Unknown Candidate",
+    "recipient_email": "unknown.candidate@email.com",
+    "email_type": "interview_invitation",
+    "subject": "Interview Invitation for Machine Learning Engineer Position at Khan Bank",
+    "body": "Dear Unknown Candidate,\n\nWe are thrilled to inform you that your application for the Machine Learning Engineer position at Khan Bank has been shortlisted.  Your impressive background and strong qualifications, particularly [mention a specific strength from their resume if available, otherwise remove bracketed information],  stood out to our team.\n\nWe were particularly impressed with [mention a specific achievement or skill from their resume or application if available, otherwise remove bracketed information].  This aligns perfectly with the requirements of this role and the innovative projects we're undertaking at Khan Bank.\n\nWe would like to invite you to interview for this exciting opportunity.  We have tentatively scheduled the interview for **[Date and Time of Interview -  e.g., Monday, July 7th, 2025, at 2:00 PM PST]**. The interview will be held via **[Interview Method - e.g., Zoom, in-person at our office at [Address]]**.  \n\n[If applicable, add:  The interview process will consist of [brief description of interview stages, e.g., a 30-minute introductory call followed by a technical assessment].]\n\n\nPlease let us know if this time works for you. If not, please suggest a few alternative times that are convenient for you and we will do our best to accommodate your schedule.\n\nWe are very excited about the possibility of you joining our team at Khan Bank. We look forward to speaking with you soon.\n\n\nSincerely,\n\nThe Khan Bank Hiring Team",
+    "job_title": "machine learning engineer",
+    "company_name": "khan bank",
+    "interview_date": "Monday, July 07, 2025",
+    "interview_time": "[To be scheduled]"
+  }
+]

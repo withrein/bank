@@ -1,0 +1,150 @@
+{
+  "Unknown Candidate": {
+    "candidate_name": "Unknown Candidate",
+    "job_title": "machine learning engineer",
+    "technical_questions": [
+      {
+        "question": "Describe a situation where you had to optimize the performance of a deep learning model for deployment in a production environment.  What techniques did you use to improve latency and throughput, and what were the trade-offs involved?",
+        "category": "technical",
+        "difficulty": "medium",
+        "expected_answer_points": [
+          "Clear explanation of the problem and context (e.g., model size, hardware constraints, required inference speed)",
+          "Discussion of specific optimization techniques used (e.g., model quantization, pruning, knowledge distillation, efficient architectures like MobileNet or EfficientNet, optimized inference frameworks)",
+          "Demonstration of understanding the trade-offs between accuracy, latency, and model size",
+          "Mention of relevant metrics used to evaluate performance (e.g., inference time, throughput, memory usage)"
+        ]
+      },
+      {
+        "question": "Let's say you're tasked with building a recommendation system using graph neural networks.  Describe your approach, including data preprocessing, model architecture selection, and evaluation metrics.  How would you handle the cold-start problem?",
+        "category": "technical",
+        "difficulty": "hard",
+        "expected_answer_points": [
+          "Clear understanding of graph neural networks and their applicability to recommendation systems",
+          "Detailed explanation of data preprocessing steps (e.g., creating a graph representation from user-item interactions, handling missing data)",
+          "Justification of the chosen GNN architecture (e.g., Graph Convolutional Networks, Graph Attention Networks) and its suitability for the task",
+          "Discussion of appropriate evaluation metrics (e.g., precision, recall, NDCG, MAP)",
+          "Effective strategies for addressing the cold-start problem (e.g., using content-based filtering, collaborative filtering, or hybrid approaches)"
+        ]
+      },
+      {
+        "question": "Explain the differences between GANs, VAEs, and Diffusion Models.  When would you choose one over the others? Provide a specific example of a problem where one of these models would be particularly well-suited.",
+        "category": "technical",
+        "difficulty": "medium",
+        "expected_answer_points": [
+          "Accurate description of the underlying principles and mechanics of each model type (GANs, VAEs, Diffusion Models)",
+          "Comparison of their strengths and weaknesses in terms of sample quality, training stability, and computational cost",
+          "Clear articulation of scenarios where each model type is preferable based on the specific task and data characteristics",
+          "A well-justified example demonstrating the suitability of one model type for a particular problem (e.g., image generation, text generation, anomaly detection)"
+        ]
+      },
+      {
+        "question": "You are working on a large-scale natural language processing task involving a massive dataset that doesn't fit into the memory of a single machine.  Describe your approach to training a transformer-based model on this data using distributed computing frameworks like Spark or Hadoop.  What are the potential challenges you might encounter, and how would you address them?",
+        "category": "technical",
+        "difficulty": "hard",
+        "expected_answer_points": [
+          "Understanding of distributed training concepts and the challenges involved in training large models on massive datasets",
+          "Knowledge of relevant distributed computing frameworks (Spark, Hadoop, Horovod, DeepSpeed)",
+          "Ability to describe a practical approach to data partitioning, model parallelization, and communication strategies for efficient distributed training",
+          "Identification of potential challenges (e.g., communication overhead, data imbalance, fault tolerance)",
+          "Proposed solutions to address these challenges (e.g., parameter server architecture, all-reduce algorithms, fault-tolerant training techniques)"
+        ]
+      },
+      {
+        "question": "Describe your experience with model versioning and managing experiments in an ML Ops context.  What tools or frameworks have you used, and how do you ensure reproducibility and traceability of your model development process?",
+        "category": "technical",
+        "difficulty": "medium",
+        "expected_answer_points": [
+          "Familiarity with ML Ops principles and the importance of version control, experiment tracking, and reproducibility",
+          "Experience with relevant tools and frameworks (e.g., MLflow, Weights & Biases, DVC)",
+          "Understanding of how to organize experiments, track hyperparameters, and manage model versions effectively",
+          "Discussion of strategies for ensuring reproducibility (e.g., using Docker containers, specifying environments, documenting code and experiments)"
+        ]
+      }
+    ],
+    "behavioral_questions": [
+      {
+        "question": "Tell me about a time when you faced a challenging technical problem that required you to learn a new skill or technology quickly.  Describe the situation, the task you had to complete, the actions you took, and the outcome.",
+        "category": "behavioral",
+        "difficulty": "medium",
+        "expected_answer_points": [
+          "Clearly defines a challenging technical problem and its context.",
+          "Demonstrates initiative in identifying the need for new skills and actively seeking resources to acquire them.",
+          "Describes a systematic approach to learning and applying the new skill, highlighting problem-solving abilities.",
+          "Quantifies the positive outcome of their actions; e.g., successful project completion, improved efficiency, or positive feedback."
+        ]
+      },
+      {
+        "question": "Tell me about a time you had to work on a team project where there were disagreements or conflicting priorities. How did you navigate these challenges and contribute to a positive team outcome?",
+        "category": "behavioral",
+        "difficulty": "medium",
+        "expected_answer_points": [
+          "Clearly describes a situation with team conflict or differing priorities.",
+          "Demonstrates active listening and understanding of different perspectives.",
+          "Highlights the candidate's contribution to conflict resolution, emphasizing collaboration and compromise.",
+          "Shows the positive impact of their actions on the team's overall success and morale; demonstrates teamwork and communication skills."
+        ]
+      },
+      {
+        "question": "Describe a situation where you had to explain a complex technical concept to someone with limited technical knowledge. How did you ensure they understood the information?",
+        "category": "behavioral",
+        "difficulty": "medium",
+        "expected_answer_points": [
+          "Clearly describes a situation requiring communication of a technical concept to a non-technical audience.",
+          "Demonstrates effective communication strategies, such as using analogies, visual aids, or simplified language.",
+          "Shows the candidate's ability to tailor their communication style to different audiences.",
+          "Highlights the successful outcome of the communication, such as the audience's understanding or positive feedback."
+        ]
+      },
+      {
+        "question": "Tell me about a time when you had to make a decision with incomplete information.  What was the situation, what steps did you take to gather more information, what decision did you make, and what was the result?",
+        "category": "behavioral",
+        "difficulty": "hard",
+        "expected_answer_points": [
+          "Describes a situation where critical information was lacking.",
+          "Demonstrates a structured approach to gathering information, including identifying key data gaps and potential sources.",
+          "Explains the decision-making process, highlighting risk assessment and consideration of potential consequences.",
+          "Evaluates the outcome of the decision, identifying both successes and areas for improvement. Shows a willingness to learn from mistakes."
+        ]
+      }
+    ],
+    "role_specific_questions": [
+      {
+        "question": "Khan Bank operates in a dynamic and competitive financial market.  Describe a scenario where you had to adapt a machine learning model quickly due to unexpected changes in market conditions or data characteristics.  What steps did you take, and what was the outcome?",
+        "category": "role-specific",
+        "difficulty": "medium",
+        "expected_answer_points": [
+          "Clearly articulates a specific scenario demonstrating adaptability and problem-solving skills.",
+          "Details the steps taken to diagnose the issue (e.g., data analysis, model evaluation).",
+          "Explains the chosen solution (e.g., retraining the model, adjusting parameters, feature engineering).",
+          "Quantifies the outcome – how did the changes impact model performance and business goals?",
+          "Demonstrates understanding of the challenges of deploying ML models in a production environment, especially within finance."
+        ]
+      },
+      {
+        "question": "Many financial institutions are increasingly using machine learning for fraud detection.  Considering Khan Bank's specific context and potential challenges (e.g., data privacy regulations, limited data availability in certain areas), how would you approach designing a robust and ethical fraud detection system?  What are some key considerations and potential limitations?",
+        "category": "role-specific",
+        "difficulty": "hard",
+        "expected_answer_points": [
+          "Demonstrates understanding of the ethical implications of AI in finance (e.g., bias, fairness, transparency).",
+          "Addresses data privacy concerns and regulatory compliance (specific to Mongolian regulations would be a plus).",
+          "Proposes a practical approach to address data limitations (e.g., data augmentation, transfer learning).",
+          "Outlines a robust system architecture, including data preprocessing, model selection, evaluation, and deployment.",
+          "Identifies potential limitations and mitigation strategies (e.g., model drift, adversarial attacks)."
+        ]
+      },
+      {
+        "question": "Khan Bank is committed to innovation and using technology to improve customer experience.  Why are *you* particularly interested in this Machine Learning Engineer role at Khan Bank, and how do your skills and experience align with their strategic goals?  Give specific examples.",
+        "category": "role-specific",
+        "difficulty": "medium",
+        "expected_answer_points": [
+          "Demonstrates genuine interest in Khan Bank and its mission (research beforehand is crucial).",
+          "Clearly connects their skills and experience to specific needs and challenges at Khan Bank.",
+          "Provides concrete examples of past projects or experiences that demonstrate relevant capabilities.",
+          "Articulates a long-term vision for their contribution to the company's success.",
+          "Shows enthusiasm and a proactive approach to learning and contributing."
+        ]
+      }
+    ],
+    "total_questions": 12
+  }
+}
