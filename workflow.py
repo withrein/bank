@@ -1,14 +1,24 @@
-from typing import Dict, Any, Union
+from typing import Dict, Any, Union, List, Optional
 from langgraph.graph import StateGraph, END
 from langgraph.checkpoint.memory import MemorySaver
+import logging
+import time
+import json
+import os
+from datetime import datetime
 
-from models import AgentState, JobDescription
+from models import AgentState, JobDescription, ParsedCV, CandidateScore
 from agents.cv_parser_agent import CVParserAgent
 from agents.scoring_agent import ScoringAgent
 from agents.shortlisting_agent import ShortlistingAgent
 from agents.interview_agent import InterviewAgent
 from agents.email_agent import EmailAgent
 from utils import create_output_directory, save_json_output
+from config import Config
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 def get_state_value(state: Union[AgentState, Dict], key: str, default=None):
     """Get value from state, handling both AgentState objects and dicts"""
@@ -39,6 +49,11 @@ class HRWorkflow:
     """Main workflow orchestrator for the HR Multi-Agent System"""
     
     def __init__(self):
+        """Initialize the HR workflow"""
+        self.thread_id = f"hr_workflow_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+        self.workflows = {}
+        self.outputs = {}
+        
         self.cv_parser = CVParserAgent()
         self.scoring_agent = ScoringAgent()
         self.shortlisting_agent = ShortlistingAgent()
@@ -53,7 +68,31 @@ class HRWorkflow:
         
         # Compile the workflow
         self.app = self.workflow.compile(checkpointer=self.memory)
+        
+        self.load_config_values()
     
+    def load_config_values(self):
+        """Load current configuration values"""
+        logger.info("Loading current configuration values")
+        # This function ensures we're using the latest Config values
+        # Config values should be updated elsewhere (e.g., in the Streamlit app)
+        self.max_candidates = Config.MAX_CANDIDATES_TO_SHORTLIST
+        self.min_score_threshold = Config.MINIMUM_SCORE_THRESHOLD
+        self.model_provider = Config.MODEL_PROVIDER
+        logger.info(f"Current config: Max Candidates={self.max_candidates}, Min Score={self.min_score_threshold}")
+    
+    def update_config_values(self, config_updates: Dict[str, Any]):
+        """Update Config values from dictionary"""
+        for key, value in config_updates.items():
+            if hasattr(Config, key):
+                setattr(Config, key, value)
+                logger.info(f"Updated Config.{key} to {value}")
+        
+        # Reload values after update
+        self.load_config_values()
+        
+        return True
+
     def _create_workflow(self) -> StateGraph:
         """Create the LangGraph workflow"""
         
@@ -195,7 +234,7 @@ class HRWorkflow:
         
         try:
             # Run the workflow
-            config = {"configurable": {"thread_id": "hr_workflow_001"}}
+            config = {"configurable": {"thread_id": self.thread_id}}
             final_state = self.app.invoke(initial_state, config=config)
             
             # Print final summary

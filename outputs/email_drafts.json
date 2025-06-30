@@ -1,13 +1,46 @@
 [
   {
-    "recipient_name": "Unknown Candidate",
-    "recipient_email": "unknown.candidate@email.com",
+    "recipient_name": "Paisley Moore",
+    "recipient_email": "paisley.moore@example.com",
     "email_type": "interview_invitation",
     "subject": "Interview Invitation for Machine Learning Engineer Position at Khan Bank",
-    "body": "Dear Unknown Candidate,\n\nWe are thrilled to inform you that your application for the Machine Learning Engineer position at Khan Bank has been shortlisted.  Your impressive background and strong qualifications, particularly [mention a specific strength from their resume if available, otherwise remove bracketed information],  stood out to our team.\n\nWe were particularly impressed with [mention a specific achievement or skill from their resume or application if available, otherwise remove bracketed information].  This aligns perfectly with the requirements of this role and the innovative projects we're undertaking at Khan Bank.\n\nWe would like to invite you to interview for this exciting opportunity.  We have tentatively scheduled the interview for **[Date and Time of Interview -  e.g., Monday, July 7th, 2025, at 2:00 PM PST]**. The interview will be held via **[Interview Method - e.g., Zoom, in-person at our office at [Address]]**.  \n\n[If applicable, add:  The interview process will consist of [brief description of interview stages, e.g., a 30-minute introductory call followed by a technical assessment].]\n\n\nPlease let us know if this time works for you. If not, please suggest a few alternative times that are convenient for you and we will do our best to accommodate your schedule.\n\nWe are very excited about the possibility of you joining our team at Khan Bank. We look forward to speaking with you soon.\n\n\nSincerely,\n\nThe Khan Bank Hiring Team",
-    "job_title": "machine learning engineer",
-    "company_name": "khan bank",
+    "body": "Dear Paisley,\nI hope this message finds you well. My name is [Your Name], and I am part of the HR team at Khan Bank. We are thrilled to inform you that, after reviewing your impressive application, we would like to invite you for an interview for the Machine Learning Engineer position.\nWe were particularly impressed with your strong background in machine learning and data science, along with your expertise in reinforcement learning and multimodal generative models. Your proficiency in Python and PyTorch aligns well with the skills we value for this role, and your candidate score of 81.4/100 reflects your strong potential to contribute to our team.\nThe interview will be an excellent opportunity for us to learn more about your experiences and discuss how you can make a significant impact at Khan Bank. Please find the interview details below:\n- **Date and Time:** [Insert Date and Time]\n- **Location:** [Insert Location/Platform Details]\n- **Interview Format:** [Insert Interview Format, e.g., In-Person, Video Call]\nPlease confirm your availability for the proposed date and time, or let us know if there are any scheduling conflicts. If you have any questions or need further information, feel free to reach out to me directly.\nWe are excited about the possibility of you joining our team and look forward to meeting you soon.\nWarm regards,\n[Your Full Name]\n[Your Position]\nKhan Bank\n[Your Contact Information]",
+    "job_title": "Machine Learning Engineer",
+    "company_name": "khan bank ",
     "interview_date": "Monday, July 07, 2025",
     "interview_time": "[To be scheduled]"
+  },
+  {
+    "recipient_name": "Shijir Batbaatar",
+    "recipient_email": "shijir.batbaatar@example.com",
+    "email_type": "rejection",
+    "subject": "Thank You for Your Application to Khan Bank",
+    "body": "Dear Shijir Batbaatar,\nI hope this message finds you well. I would like to extend our sincere gratitude for your interest in the Machine Learning Engineer position at Khan Bank and for taking the time to go through our recruitment process.\nAfter careful consideration, we have decided to move forward with another candidate for this particular role. This decision was not easy, as we received applications from many qualified individuals. Your background in developing a bank credit scoring model and designing a speech recognition system is indeed impressive and indicates your strong potential in the field.\nWhile your application met the basic requirements, there were certain aspects where we felt some gaps existed in relation to the specific needs of our current projects. We believe, however, that with further experience and refinement of your skills, you will be an excellent fit for future opportunities.\nWe encourage you to apply for other positions at Khan Bank that align with your skills and interests. We are continually growing and would value the opportunity to consider your application again.\nThank you once more for your interest in joining our team. We wish you all the best in your job search and future endeavors.\nWarm regards,\n[Your Name]\n[Your Position]\nKhan Bank",
+    "job_title": "Machine Learning Engineer",
+    "company_name": "khan bank ",
+    "interview_date": null,
+    "interview_time": null
+  },
+  {
+    "recipient_name": "Paisley Moore",
+    "recipient_email": "paisley.moore@example.com",
+    "email_type": "acknowledgment",
+    "subject": "Application Received for Machine Learning Engineer Position",
+    "body": "Dear Paisley Moore,\nThank you for submitting your application for the Machine Learning Engineer position at Khan Bank. We have successfully received your application and are currently reviewing all submissions.\nOur recruitment team will carefully evaluate your qualifications and experience to assess your fit for the role. You can expect to hear from us regarding the next steps within the next two weeks. Should you be shortlisted, we will reach out to schedule an interview.\nWe appreciate your interest in joining our team and the time you invested in applying. If you have any further questions in the meantime, please feel free to reach out.\nThank you once again for your application.\nBest regards,\n[Your Name]\n[Your Position]\nKhan Bank",
+    "job_title": "Machine Learning Engineer",
+    "company_name": "khan bank ",
+    "interview_date": null,
+    "interview_time": null
+  },
+  {
+    "recipient_name": "Shijir Batbaatar",
+    "recipient_email": "shijir.batbaatar@example.com",
+    "email_type": "acknowledgment",
+    "subject": "Application Received for Machine Learning Engineer Position",
+    "body": "Dear Shijir Batbaatar,\nThank you for applying for the Machine Learning Engineer position at Khan Bank. We have successfully received your application and appreciate your interest in joining our team.\nOur hiring team will review your application thoroughly, and we will be in touch within the next two weeks regarding the status of your application and potential next steps. Should you be shortlisted, the next phase will involve a technical assessment followed by an interview.\nWe are grateful for the opportunity to consider you for this role and appreciate your patience during our review process.\nBest regards,\n[Your Name]\n[Your Position]\nKhan Bank\n[Contact Information]",
+    "job_title": "Machine Learning Engineer",
+    "company_name": "khan bank ",
+    "interview_date": null,
+    "interview_time": null
   }
 ]

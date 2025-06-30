@@ -1,5 +1,26 @@
 .venv/
-.venv/
 __pycache__/
 *.pyc
-.venv/
+.DS_Store
+outputs/*.xlsx
+outputs/*.json
+outputs/*.csv
+outputs/*.tmp
+# VSCode and PyCharm
+.vscode/
+.idea/
+# OS junk files
+Thumbs.db
+# Jupyter and IPython
+.ipynb_checkpoints/
+*.ipynb
+# Test and temp files
+*.log
+*.bak
+*.tmp
+# Ignore old Gradio and test scripts
+*gradio_app*.py
+*test_*.py
+# Ignore environment variable files
+.env
+.env.*

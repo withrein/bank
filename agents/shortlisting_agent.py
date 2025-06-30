@@ -6,23 +6,30 @@ class ShortlistingAgent:
     """Agent responsible for shortlisting top candidates for HR review"""
     
     def __init__(self):
-        self.max_candidates = Config.MAX_CANDIDATES_TO_SHORTLIST
-        self.min_score_threshold = Config.MINIMUM_SCORE_THRESHOLD
+        # Store these as default values, but will check current Config values when processing
+        self.default_max_candidates = Config.MAX_CANDIDATES_TO_SHORTLIST
+        self.default_min_score_threshold = Config.MINIMUM_SCORE_THRESHOLD
     
     def shortlist_candidates(self, candidate_scores: List[CandidateScore]) -> List[CandidateScore]:
         """Select top candidates based on scores and criteria"""
         if not candidate_scores:
             return []
         
+        # Use current Config values instead of stored values
+        max_candidates = Config.MAX_CANDIDATES_TO_SHORTLIST
+        min_score_threshold = Config.MINIMUM_SCORE_THRESHOLD
+        
+        print(f"📊 Using max candidates: {max_candidates}, minimum score: {min_score_threshold}")
+        
         # Filter candidates who meet minimum score threshold
         qualified_candidates = [
             candidate for candidate in candidate_scores 
-            if candidate.overall_score >= self.min_score_threshold
+            if candidate.overall_score >= min_score_threshold
         ]
         
         # If no candidates meet threshold, take top candidates anyway (with warning)
         if not qualified_candidates:
-            print(f"⚠️  No candidates meet minimum score threshold of {self.min_score_threshold}")
+            print(f"⚠️  No candidates meet minimum score threshold of {min_score_threshold}")
             print("   Taking top candidates regardless of score...")
             qualified_candidates = candidate_scores
         
@@ -30,7 +37,9 @@ class ShortlistingAgent:
         qualified_candidates.sort(key=lambda x: x.overall_score, reverse=True)
         
         # Take top N candidates
-        shortlisted = qualified_candidates[:self.max_candidates]
+        shortlisted = qualified_candidates[:max_candidates]
+        
+        print(f"✅ Shortlisted {len(shortlisted)} out of {len(qualified_candidates)} qualified candidates")
         
         return shortlisted
     
